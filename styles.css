@@ -1,0 +1,105 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.todo-app {
+    max-width: 400px;
+    margin: 20px auto;
+    background: linear-gradient(45deg, #0c1c35, #00407a); /* Gradient background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease-in-out;
+    color: #fff;
+}
+
+.todo-app:hover {
+    background: linear-gradient(45deg, #007BFF, #23a6b8); /* Gradient on hover */
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(5px);
+    transition: background 0.3s ease-in-out;
+    color: #333;
+}
+
+input[type="text"]:focus {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+button#add-button {
+    padding: 12px 24px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button#add-button:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(5px);
+    transition: background 0.3s ease-in-out;
+    color: #333;
+}
+
+li:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+li button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 6px 12px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+li button:hover {
+    background-color: #c82333;
+}
